@@ -1,0 +1,210 @@
+/* ------------------------------ CSS -- */
+@charset "utf-8";
+
+//width: ~"calc(50% - 20px)";
+
+header, section, footer, aside, nav, main, article, figure {
+    display: block; 
+}
+
+div, header, nav, article, section, aside, footer, h1, h2, h3, h4, h5, h6, p, a, ul, li, figure, figcaption, class, img { 
+	margin: 0;
+	padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+	border: 0 solid transparent;
+	font-size: 16px;
+	margin: 0;
+	min-height: 100%;
+	padding: 0;
+	width: 100%;
+	display: block;
+	font-family: 'Roboto', sans-serif;
+}
+
+img, object, embed, canvas, video, audio, picture {
+	max-width: 100%;
+	height: auto;
+}
+img {
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ------------------------------- RECURENTES -- */
+.clear {
+  display: block;
+  zoom: 1;
+  &:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+.center {
+    width: 960px;
+    margin: 0 auto;
+}
+
+h1, h2{
+    font-family: serif;
+}
+/* ------------------------------- END RECURENTES -- */
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row-reverse;
+    justify-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    .presentation, .formation{
+        width: 50%;
+
+
+
+    }
+    .presentation{
+        padding: 30px;
+        border-radius: 15px;
+        position: relative;
+        right: 30px;
+        top: 25px;
+        background-color: #fff;
+        height: 85vh;
+        h1{
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 60px;
+            line-height: 50px;
+        }
+        img{
+            height: 250px;
+            width: 250px;
+            margin: 0 auto;
+            object-fit: cover;
+            border-radius: 15px;
+
+        }
+        h2{
+            margin: 10px auto 30px;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            width: 300px;
+            margin: 0 auto;
+        }
+        ul{
+            margin: 30px auto;
+            display: block;
+            li{
+                list-style-type: none;
+                text-align: center;
+                margin: 20px;
+            }
+        }
+    }
+
+    .formation{
+        background-color: rgb(43, 44, 48);
+        color: #fff;
+        padding: 30px;
+        height: 90vh;
+        border-radius: 0 15px 15px 0;
+        h2{
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 30px;
+        }
+        article{
+            margin: 10px;
+            h4{
+              margin-bottom: 20px;  
+            }
+        }
+    }
+}
+//---------responsive 320px--------//
+@media screen and (max-width: 320px){
+    section{
+        position: inherit;
+        top: 0;
+        left: 0;
+        transform: none;
+        .presentation, .formation{
+            width: 100%;
+        }
+        .presentation{
+            padding: 0px;
+            border-radius: 0px;
+            position: inherit;
+        
+            background-color: #fff;
+            height: 90vh;
+            h1{
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 60px;
+                line-height: 50px;
+            }
+            img{
+                height: 250px;
+                width: 250px;
+                margin: 0 auto;
+                object-fit: cover;
+                border-radius: 15px;
+    
+            }
+            h2{
+                margin: 10px auto 30px;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                width: 300px;
+                margin: 0 auto;
+            }
+            ul{
+                margin: 30px auto;
+                display: block;
+                li{
+                    list-style-type: none;
+                    text-align: center;
+                    margin: 20px;
+                }
+            }
+        }
+    
+        .formation{
+            background-color: rgb(43, 44, 48);
+            color: #fff;
+            padding: 30px;
+            height: 120vh;
+            border-radius: 0 15px 15px 0;
+            h2{
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: 30px;
+            }
+            article{
+                margin: 10px;
+                h4{
+                  margin-bottom: 20px;  
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,231 @@
+@charset "utf-8";
+/* ------------------------------ CSS -- */
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+  display: block;
+}
+div,
+header,
+nav,
+article,
+section,
+aside,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li,
+figure,
+figcaption,
+class,
+img {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  border: 0 solid transparent;
+  font-size: 16px;
+  margin: 0;
+  min-height: 100%;
+  padding: 0;
+  width: 100%;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+img,
+object,
+embed,
+canvas,
+video,
+audio,
+picture {
+  max-width: 100%;
+  height: auto;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* ------------------------------- RECURENTES -- */
+.clear {
+  display: block;
+  zoom: 1;
+}
+.clear:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.center {
+  width: 960px;
+  margin: 0 auto;
+}
+h1,
+h2 {
+  font-family: serif;
+}
+/* ------------------------------- END RECURENTES -- */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row-reverse;
+  justify-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section .presentation,
+section .formation {
+  width: 50%;
+}
+section .presentation {
+  padding: 30px;
+  border-radius: 15px;
+  position: relative;
+  right: 30px;
+  top: 25px;
+  background-color: #fff;
+  height: 85vh;
+}
+section .presentation h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 60px;
+  line-height: 50px;
+}
+section .presentation img {
+  height: 250px;
+  width: 250px;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+section .presentation h2 {
+  margin: 10px auto 30px;
+  text-align: center;
+}
+section .presentation p {
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+}
+section .presentation ul {
+  margin: 30px auto;
+  display: block;
+}
+section .presentation ul li {
+  list-style-type: none;
+  text-align: center;
+  margin: 20px;
+}
+section .formation {
+  background-color: #2b2c30;
+  color: #fff;
+  padding: 30px;
+  height: 90vh;
+  border-radius: 0 15px 15px 0;
+}
+section .formation h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 30px;
+}
+section .formation article {
+  margin: 10px;
+}
+section .formation article h4 {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 320px) {
+  section {
+    position: inherit;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+  section .presentation,
+  section .formation {
+    width: 100%;
+  }
+  section .presentation {
+    padding: 0px;
+    border-radius: 0px;
+    position: inherit;
+    background-color: #fff;
+    height: 90vh;
+  }
+  section .presentation h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 60px;
+    line-height: 50px;
+  }
+  section .presentation img {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  section .presentation h2 {
+    margin: 10px auto 30px;
+    text-align: center;
+  }
+  section .presentation p {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+  }
+  section .presentation ul {
+    margin: 30px auto;
+    display: block;
+  }
+  section .presentation ul li {
+    list-style-type: none;
+    text-align: center;
+    margin: 20px;
+  }
+  section .formation {
+    background-color: #2b2c30;
+    color: #fff;
+    padding: 30px;
+    height: 120vh;
+    border-radius: 0 15px 15px 0;
+  }
+  section .formation h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 30px;
+  }
+  section .formation article {
+    margin: 10px;
+  }
+  section .formation article h4 {
+    margin-bottom: 20px;
+  }
+}
