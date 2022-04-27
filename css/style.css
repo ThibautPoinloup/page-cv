@@ -161,7 +161,7 @@ section .formation article {
 section .formation article h4 {
   margin-bottom: 20px;
 }
-@media screen and (max-width: 320px) {
+@media (max-width: 800px) and (min-width: 320px) {
   section {
     position: inherit;
     top: 0;
@@ -181,7 +181,7 @@ section .formation article h4 {
   }
   section .presentation h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px auto;
     font-size: 60px;
     line-height: 50px;
   }
@@ -214,7 +214,8 @@ section .formation article h4 {
     background-color: #2b2c30;
     color: #fff;
     padding: 30px;
-    height: 120vh;
+    height: 112vh;
+    text-align: center;
     border-radius: 0 15px 15px 0;
   }
   section .formation h2 {
@@ -227,5 +228,8 @@ section .formation article h4 {
   }
   section .formation article h4 {
     margin-bottom: 20px;
+  }
+  section .formation article ul li {
+    list-style-type: none;
   }
 }
